@@ -1,10 +1,10 @@
 # mec_generation_tool
 
-The jar file MECDataGenerator.jar provides a tool to generate MEC frequencies for a graph provided in a text file (i.e. MECExample.txt).
+The jar file MECDataGenerator.jar provides a tool to generate Markov Equivalence Classes (MEC) size frequencies for a graph provided in a text file (i.e. MECExample.txt).
 
-The -s flag will let you output the skeleta statistics as well as the MEC frequency distribution for each skeleta.  (Note that this is a toy script and should work quickly on up to 8 node graphs, but will start to become extremely slow and output lots of text when running across all 9, 10 node graphs). 
+The -s flag will let you output the skeleta statistics as well as the MEC size frequencies for each skeleta.  (Note that this is a toy script and should work quickly on up to 8 node graphs, but will start to become extremely slow and output lots of text when running across all 9, 10 node graphs). 
 
-The program automatically buckets/hashes skeleta according to their MEC frequency distribution, and so the output will indicate whether there were at least two skeleta with the same MEC frequency distribution.  
+The program automatically buckets/hashes skeleta according to their MEC size frequencies, and so the output will indicate whether there were at least two skeleta with the same MEC size frequencies.  
 
 To run the code simply do:
 
@@ -25,7 +25,7 @@ For example, MECExample.txt represents the complete bipartite graph on 6 nodes:
 3 5  
 3 6  
 
-For example, the following will output the skeleton data and MEC frequency distribution for the complete bipartite graph on 6 nodes.   
+For example, the following will output the skeleton data and MEC size frequencies for the complete bipartite graph on 6 nodes.   
 
 Command:
 java -jar MECDataGenerator.jar MECExample.txt -s 
