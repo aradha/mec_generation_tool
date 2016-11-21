@@ -14,16 +14,16 @@ The input file should represent the adjacency list for the graph: the first line
 
 For example, MECExample.txt represents the complete bipartite graph on 6 nodes:
 
-6 9 \\
-1 4 \\
-1 5 \\
-1 6 \\
-2 4 \\
-2 5 \\
-2 6 \\
-3 4 \\
-3 5 \\
-3 6 \\
+6 9  
+1 4  
+1 5  
+1 6  
+2 4  
+2 5  
+2 6  
+3 4  
+3 5  
+3 6  
 
 For example, the following will output the skeleton data and MEC frequency distribution for the complete bipartite graph on 6 nodes.   
 
@@ -31,7 +31,7 @@ Command:
 java -jar MECDataGenerator.jar MECExample.txt -s 
 
 Output:
-$ 9 $ 0 $ 18 $ 3 3 3 3 3 3 $ 104 $ 230 \\
+$ 9 $ 0 $ 18 $ 3 3 3 3 3 3 $ 104 $ 230   
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 4 4 4 4 4 4
 
 The first line is $ delimited and represents number of edges, number of triangles, number of induced 3 paths, degree distribution, number of MECs and number of DAGs respectively.
